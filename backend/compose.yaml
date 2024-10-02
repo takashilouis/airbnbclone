@@ -1,0 +1,10 @@
+services:
+  postgres:
+    image: 'postgres:latest'
+    volumes:
+      - ~/volumes/louiskhanh/postgresql/:/var/lib/postgresql/data
+    environment:
+      - POSTGRES_PASSWORD=louiskhanh
+      - POSTGRES_USER=louiskhanh
+    ports:
+      - 127.0.0.1:5432:5432
